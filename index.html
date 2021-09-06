@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="main.js"></script>
+    <title>Jonas grey</title>
+</head>
+<body>
+    <div class="main">
+        <input type="text" class="header" value="Todo title">
+        <div class="lists" id="list" >
+            <div class="todopara one"> <input type="text" class="todoitem"  id="one" value="Watching netflix"> <i class="material-icons todoicon" onclick="onedone()">task_alt</i></div>
+            <div class="todopara two"> <input type="text" class="todoitem" id="two" value="Watching netflix"> <i class="material-icons todoicon" onclick="twodone()">task_alt</i></div>
+            <div class="todopara three"> <input type="text" class="todoitem" id="three" value="Watching netflix"> <i class="material-icons todoicon" onclick="threedone()">task_alt</i></div>
+            <div class="todopara four"> <input type="text" class="todoitem" id="four" value="Watching netflix"> <i class="material-icons todoicon" onclick="fourdone()">task_alt</i></div>
+            <div class="todopara five"> <input type="text" class="todoitem" id="five" value="Watching netflix"> <i class="material-icons todoicon" onclick="fivedone()">task_alt</i></div>
+        </div>
+        <div class="footer">
+            <input type="text" id="type" value="Type ...">
+            <button onclick="addnew()" class="typeicon"><i class="material-icons">add</i></button>
+        </div>
+    </div>
+</body>
+</html>

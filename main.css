@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  color: white;
+  font-family: "Popins", "sans-serif";
+  background-image:url(back.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main {
+  background-color: #345b63;
+  color: white;
+  text-align: center;
+  width: 400px;
+  height: 450px;
+  display: grid;
+  grid-template:
+    "header"
+    "lists" auto
+    "footer"
+    / auto;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 4px 6px gray;
+  box-sizing: border-box;
+}
+.header{
+    padding: 5px 0 0 20px;
+    margin-bottom: 0;
+    grid-area: header;
+    background-color: inherit;
+    color: white;
+    font-size: 30px;
+    border:none;
+}
+.lists{
+    grid-area: lists;
+}
+.todopara{
+    background-color: rgba(255, 255, 255, 0.363);
+    color:white;
+    margin:10px;
+    border:1px #345b63 solid;
+    border-radius: 5px;
+    display: grid;
+    grid-template: 
+    "todoitem todoicon"
+    /90% 10%;
+    text-transform: capitalize;
+}
+.todopara:not(.one , .two){
+    visibility: hidden;
+}
+
+.todoitem{
+    grid-area: todoitem;
+    background-color: rgba(255, 255, 255, 0);
+    border:none;
+    color:white;
+    padding: 12px;
+}
+.todoicon{
+    grid-area: todoicon;
+    place-self: center;
+}
+#type{
+    grid-area: type;
+    background-color: rgba(255, 255, 255, 0.363);
+    color:white;
+    border:1px #345b63 solid;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+.typeicon{
+    background-color: rgba(255, 255, 255, 0.363);
+    color:white;
+    border:1px #345b63 solid;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.footer{
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template: 
+    "type typeicon"
+    /85% 15%;
+    padding: 0 10px 10px 10px ;
+}
+input:focus{
+    outline-width: 0;
+}
+i{
+    cursor: pointer;
+}
+input{
+    font-family: 'Poppins' , 'sans-serif';
+}
